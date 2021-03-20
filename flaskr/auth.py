@@ -32,7 +32,7 @@ def load_lobbed_in_user():
         g.user = None
         pass
     except Exception as e:
-        l.error("load user session error." + str(e))
+#        l.error("load user session error." + str(e))
         g.user = None
     
 

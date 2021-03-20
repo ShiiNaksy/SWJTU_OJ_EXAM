@@ -12,7 +12,8 @@ err_levels = (
         '[ERRO]',
         '[WARN]',
         '[SYST]',
-        '[INFO]'
+        '[INFO]',
+        '[DEBUG]'
         )
 class Logger:
     def __init__(self, dir_name=log_dir, filename=log_filename, location="None"):
@@ -84,6 +85,17 @@ class Logger:
                 err_level = err_levels[3],
                 log       = log,
                 filename  = self.file_location
+                )
+        os.system(log_string)
+    
+    def debug(self, log):
+        now = datetime.now()
+        log_string = self._format_string.format(
+                location = self.location,
+                date      = now.strftime("%Y/%m/%d %H:%M:%S"),
+                err_level = err_levels[3],
+                log       = log,
+                filename  = log_dir + '/' + "debug.log"
                 )
         os.system(log_string)
 
