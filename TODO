@@ -1,0 +1,9 @@
+flaskr/admin.py:62:        #TODO: say auth.py, the same
+flaskr/admin.py:67:            #TODO: add a log here
+flaskr/admin.py:77:#TODO: use sqlalchemy query delete, add, update, get
+flaskr/admin.py:278:    #TODO: maybe later, not so emergency now
+flaskr/exam.py:40:	# TODO: upload exam result to server
+flaskr/func.py:39:    #TODO: adding safe 
+flaskr/func.py:89:    # TODO: need seperate the time parse
+flaskr/judge.py:3:#TODO: add teacher judge
+flaskr/judge.py:12:#TODO: add auto judgement useing code_judge
